@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Myntra Bag</title>
+  <link rel="stylesheet" href="myntra_bag.css">
+</head>
+<body>
+   <button id="bag" class="button" 
+   onclick="cartQuantity++; 
+   document.querySelector('#cart-summary').innerText = `Your Bag has ${cartQuantity}`;
+   ">Add to bag</button>
+   <button id="wish" class="button" onclick="cartQuantity--
+   document.querySelector('#cart-summary').innerText = `Your Bag has ${cartQuantity}`;
+   "> Move to Wishlist</button>
+   <button id="bag" class="button" onclick="cartQuantity += 2;
+   document.querySelector('#cart-summary').innerText = `Your Bag has ${cartQuantity}`;
+   ">Add 1+1 Sale Item</button>
+   <h1 id="cart-summary"></h1>
+
+   <script>
+    let cartQuantity = 0;
+    document.querySelector('#cart-summary').innerText = `Your Bag has ${cartQuantity}`;
+   </script>
+</body>
+</html>
+
+<!-- here we learnt to use add the items in the bag and add items in the wishlist 
+ * we learnt new things like storing data in the variables 
+ * so here we used '#cart-summary' to store the data and to increase further we used 'cartQuantity'
+   and then used 'document.querySelector('#cart-summary').innerText = `Your Bag has ${cartQuantity}`;'
+   to update the items and display it. 
+ * in the last we used 'cartQuantity = cartQuantity + 1; to add or we can use 'cartQuantity++' to add the items as well. -->
